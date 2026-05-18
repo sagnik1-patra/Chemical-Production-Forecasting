@@ -1,0 +1,31 @@
+{
+    "project_name": "Chemical Production Forecasting System using GA",
+    "author": "Sagnik Patra",
+    "algorithm": "Genetic Algorithm Feature Selection",
+    "note": "TensorFlow removed. MLPRegressor used to avoid DLL paging file error.",
+    "target_column": "2024-25",
+    "rows": 96,
+    "columns": 12,
+    "total_features": 11,
+    "selected_features_count": 3,
+    "selected_features": [
+        "2018-19",
+        "2020-21",
+        "2023-24"
+    ],
+    "ga_best_score": 0.9997635929433328,
+    "random_forest": {
+        "mae": 7356.023698284371,
+        "mse": 195651684.95752308,
+        "rmse": 13987.554645381124,
+        "r2_score": 0.9996130635159466,
+        "accuracy_percentage": 99.96130635159466
+    },
+    "mlp_regressor": {
+        "mae": 208826.79992239177,
+        "mse": 549251435292.20526,
+        "rmse": 741114.9946480676,
+        "r2_score": -0.08624374627496434,
+        "accuracy_percentage": -8.624374627496433
+    }
+}

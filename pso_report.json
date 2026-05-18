@@ -1,0 +1,31 @@
+{
+    "project_name": "Chemical Production Forecasting System using PSO",
+    "author": "Sagnik Patra",
+    "algorithm": "Particle Swarm Optimization Feature Selection",
+    "note": "TensorFlow removed. MLPRegressor used to avoid DLL paging file error.",
+    "target_column": "2024-25",
+    "rows": 96,
+    "columns": 12,
+    "total_features": 11,
+    "selected_features_count": 3,
+    "selected_features": [
+        "2021-22",
+        "2022-23",
+        "2023-24"
+    ],
+    "pso_best_score": 0.999716522747262,
+    "random_forest": {
+        "mae": 8296.59327436675,
+        "mse": 302634723.98544586,
+        "rmse": 17396.399742057143,
+        "r2_score": 0.9994014852666522,
+        "accuracy_percentage": 99.94014852666521
+    },
+    "mlp_regressor": {
+        "mae": 208826.80234445407,
+        "mse": 549251436854.9076,
+        "rmse": 741114.995702359,
+        "r2_score": -0.08624374936549017,
+        "accuracy_percentage": -8.624374936549017
+    }
+}

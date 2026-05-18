@@ -1,0 +1,53 @@
+project:
+  name: Chemical Production Forecasting System using GA
+  author: Sagnik Patra
+note: TensorFlow removed due to DLL paging file error. MLPRegressor used instead.
+paths:
+  dataset_path: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\Production_of_Major_Chemicals_2024-25_1_0.csv
+  output_directory: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting
+  h5_file: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\ga_model_data.h5
+  rf_pkl_model: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\ga_random_forest_model.pkl
+  mlp_pkl_model: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\ga_mlp_model.pkl
+  prediction_csv: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\ga_prediction.csv
+  result_csv: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\ga_result.csv
+  json_report: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\ga_report.json
+data:
+  target_column: 2024-25
+  rows: 96
+  columns: 12
+  all_features:
+  - Category
+  - Sub -Groups / Products
+  - 2015-16
+  - 2016-17
+  - 2017-18
+  - 2018-19
+  - 2019-20
+  - 2020-21
+  - 2021-22
+  - 2022-23
+  - 2023-24
+  selected_features:
+  - 2018-19
+  - 2020-21
+  - 2023-24
+ga_parameters:
+  population_size: 30
+  generations: 30
+  crossover_rate: 0.8
+  mutation_rate: 0.1
+  elite_count: 2
+models:
+  random_forest:
+    n_estimators: 200
+    max_depth: 10
+    random_state: 42
+  mlp_regressor:
+    hidden_layer_sizes:
+    - 128
+    - 64
+    - 32
+    activation: relu
+    solver: adam
+    max_iter: 1000
+    early_stopping: true

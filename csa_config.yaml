@@ -1,0 +1,55 @@
+project:
+  name: Chemical Production Forecasting System using CSA
+  author: Sagnik Patra
+paths:
+  dataset_path: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\Production_of_Major_Chemicals_2024-25_1_0.csv
+  output_directory: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting
+  h5_model: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\csa_model.h5
+  pkl_model: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\csa_random_forest_model.pkl
+  prediction_csv: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\csa_prediction.csv
+  result_csv: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\csa_result.csv
+  json_report: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\csa_report.json
+data:
+  target_column: 2024-25
+  rows: 96
+  columns: 12
+  all_features:
+  - Category
+  - Sub -Groups / Products
+  - 2015-16
+  - 2016-17
+  - 2017-18
+  - 2018-19
+  - 2019-20
+  - 2020-21
+  - 2021-22
+  - 2022-23
+  - 2023-24
+  selected_features:
+  - Sub -Groups / Products
+  - 2018-19
+  - 2019-20
+  - 2020-21
+  - 2022-23
+csa_parameters:
+  population_size: 20
+  generations: 30
+  clone_factor: 5
+  mutation_rate: 0.15
+  replace_rate: 0.25
+models:
+  random_forest:
+    n_estimators: 200
+    max_depth: 10
+    random_state: 42
+  deep_learning:
+    layers:
+    - 128
+    - 64
+    - 32
+    - 1
+    activation: relu
+    optimizer: adam
+    loss: mse
+    epochs: 200
+    batch_size: 8

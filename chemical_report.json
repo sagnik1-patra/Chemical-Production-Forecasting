@@ -1,0 +1,33 @@
+{
+    "project_name": "Chemical Production Forecasting System",
+    "target_column": "2024-25",
+    "rows": 96,
+    "columns": 12,
+    "features": [
+        "Category",
+        "Sub -Groups / Products",
+        "2015-16",
+        "2016-17",
+        "2017-18",
+        "2018-19",
+        "2019-20",
+        "2020-21",
+        "2021-22",
+        "2022-23",
+        "2023-24"
+    ],
+    "random_forest": {
+        "mae": 32008.05389928088,
+        "mse": 7814647295.799028,
+        "rmse": 88400.49375314047,
+        "r2_score": 0.9845451259496659,
+        "accuracy_percentage": 98.45451259496659
+    },
+    "deep_learning_h5": {
+        "mae": 77119.83352050782,
+        "mse": 12062305924.148361,
+        "rmse": 109828.52964575443,
+        "r2_score": 0.9761446151364339,
+        "accuracy_percentage": 97.61446151364339
+    }
+}

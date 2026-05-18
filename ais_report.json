@@ -1,0 +1,32 @@
+{
+    "project_name": "Chemical Production Forecasting System using AIS",
+    "author": "Sagnik Patra",
+    "algorithm": "Artificial Immune System Feature Selection",
+    "target_column": "2024-25",
+    "rows": 96,
+    "columns": 12,
+    "total_features": 11,
+    "selected_features_count": 5,
+    "selected_features": [
+        "Sub -Groups / Products",
+        "2018-19",
+        "2019-20",
+        "2020-21",
+        "2022-23"
+    ],
+    "ais_best_score": 0.9998339345394106,
+    "random_forest": {
+        "mae": 10251.926284825433,
+        "mse": 534156298.1599847,
+        "rmse": 23111.821610595405,
+        "r2_score": 0.9989436096091383,
+        "accuracy_percentage": 99.89436096091383
+    },
+    "deep_learning_h5": {
+        "mae": 222295.778125,
+        "mse": 104844559740.16522,
+        "rmse": 323797.0965591959,
+        "r2_score": 0.7926509790764262,
+        "accuracy_percentage": 79.26509790764263
+    }
+}

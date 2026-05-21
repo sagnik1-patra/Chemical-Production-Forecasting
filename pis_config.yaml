@@ -1,0 +1,10 @@
+paths:
+  dataset: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting\Production_of_Major_Chemicals_2024-25_1_0.csv
+  output_directory: C:\Users\NXTWAVE\Downloads\Chemical Production Forecasting
+project:
+  author: Sagnik Patra
+  name: Chemical Production Forecasting using AIS + PSO
+selected_features:
+- 2021-22
+- 2022-23
+- 2023-24

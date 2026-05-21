@@ -1,0 +1,11 @@
+{
+    "project_name": "Chemical Production Forecasting using AIS + PSO",
+    "algorithm": "Hybrid AIS + PSO",
+    "target_column": "2024-25",
+    "selected_features": [
+        "2021-22",
+        "2022-23",
+        "2023-24"
+    ],
+    "best_score": 0.999716522747262
+}

@@ -1,0 +1,35 @@
+{
+    "project_name": "Chemical Production Forecasting System using BA + PSO",
+    "author": "Sagnik Patra",
+    "algorithm": "Hybrid Bat Algorithm + Particle Swarm Optimization",
+    "prefix": "bso_",
+    "target_column": "2024-25",
+    "rows": 96,
+    "columns": 12,
+    "total_features": 11,
+    "selected_features_count": 7,
+    "selected_features": [
+        "2015-16",
+        "2017-18",
+        "2018-19",
+        "2019-20",
+        "2021-22",
+        "2022-23",
+        "2023-24"
+    ],
+    "bso_best_score": 0.999705659102554,
+    "random_forest": {
+        "mae": 5937.116593069438,
+        "mse": 140842863.90815386,
+        "rmse": 11867.72361947117,
+        "r2_score": 0.9997214578418966,
+        "accuracy_percentage": 99.97214578418966
+    },
+    "mlp_regressor": {
+        "mae": 208827.0397119057,
+        "mse": 549251201991.0597,
+        "rmse": 741114.8372493022,
+        "r2_score": -0.08624328487988353,
+        "accuracy_percentage": -8.624328487988354
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "project_name": "Chemical Production Forecasting System using Dragonfly Algorithm",
+    "author": "Sagnik Patra",
+    "algorithm": "Dragonfly Algorithm Feature Selection",
+    "prefix": "da_",
+    "target_column": "2024-25",
+    "rows": 96,
+    "columns": 12,
+    "total_features": 11,
+    "selected_features_count": 5,
+    "selected_features": [
+        "Sub -Groups / Products",
+        "2018-19",
+        "2019-20",
+        "2020-21",
+        "2022-23"
+    ],
+    "da_best_score": 0.9998339345394106,
+    "random_forest": {
+        "mae": 10251.926284825433,
+        "mse": 534156298.1599847,
+        "rmse": 23111.821610595405,
+        "r2_score": 0.9989436096091383,
+        "accuracy_percentage": 99.89436096091383
+    },
+    "mlp_regressor": {
+        "mae": 208826.9714675717,
+        "mse": 549251251873.603,
+        "rmse": 741114.870903022,
+        "r2_score": -0.08624338353160721,
+        "accuracy_percentage": -8.62433835316072
+    }
+}

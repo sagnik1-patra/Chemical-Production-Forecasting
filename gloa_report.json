@@ -1,0 +1,37 @@
+{
+    "project_name": "Chemical Production Forecasting System using GWOA + ALOA",
+    "author": "Sagnik Patra",
+    "algorithm": "Hybrid Grey Wolf Optimization Algorithm + Ant Lion Optimization Algorithm",
+    "prefix": "gloa_",
+    "target_column": "2024-25",
+    "rows": 96,
+    "columns": 12,
+    "total_features": 11,
+    "selected_features_count": 9,
+    "selected_features": [
+        "Sub -Groups / Products",
+        "2015-16",
+        "2016-17",
+        "2018-19",
+        "2019-20",
+        "2020-21",
+        "2021-22",
+        "2022-23",
+        "2023-24"
+    ],
+    "gloa_best_score": 0.9997215562019983,
+    "random_forest": {
+        "mae": 9593.832192165968,
+        "mse": 429253542.325483,
+        "rmse": 20718.434842561903,
+        "r2_score": 0.9991510737233316,
+        "accuracy_percentage": 99.91510737233315
+    },
+    "mlp_regressor": {
+        "mae": 208827.29474931964,
+        "mse": 549251026251.6629,
+        "rmse": 741114.7186850784,
+        "r2_score": -0.0862429373235396,
+        "accuracy_percentage": -8.62429373235396
+    }
+}

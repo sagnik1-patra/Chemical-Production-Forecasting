@@ -1,0 +1,35 @@
+{
+    "project_name": "Chemical Production Forecasting System using Krill Algorithm",
+    "author": "Sagnik Patra",
+    "algorithm": "Krill Algorithm Feature Selection",
+    "prefix": "ka_",
+    "target_column": "2024-25",
+    "rows": 96,
+    "columns": 12,
+    "total_features": 11,
+    "selected_features_count": 7,
+    "selected_features": [
+        "2016-17",
+        "2017-18",
+        "2018-19",
+        "2019-20",
+        "2021-22",
+        "2022-23",
+        "2023-24"
+    ],
+    "ka_best_score": 0.999630451244215,
+    "random_forest": {
+        "mae": 6718.4276498154695,
+        "mse": 157572399.15129486,
+        "rmse": 12552.784517838854,
+        "r2_score": 0.9996883721695282,
+        "accuracy_percentage": 99.96883721695282
+    },
+    "mlp_regressor": {
+        "mae": 208827.03884715933,
+        "mse": 549251202298.04016,
+        "rmse": 741114.8374564095,
+        "r2_score": -0.08624328548699278,
+        "accuracy_percentage": -8.624328548699278
+    }
+}
